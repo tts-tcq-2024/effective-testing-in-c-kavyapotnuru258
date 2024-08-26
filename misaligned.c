@@ -9,12 +9,12 @@ int printColorMap() {
             printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[j]);
         }
     }
-    return i * j - 1;  // Introduce an error: return 24 instead of 25
+    return i * j - 1;  
 }
 
 int main() {
     int result = printColorMap();
-    assert(result == 25);  // This will now fail
+    assert(result == 25); 
     printf("All is well (maybe!)\n");
     return 0;
 }
