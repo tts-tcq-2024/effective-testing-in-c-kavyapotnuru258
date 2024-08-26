@@ -1,17 +1,3 @@
-#include <stdio.h>
-#include <assert.h>
-
-char size(int cms) {
-    char sizeName = '\0';
-    if(cms < 38) {
-        sizeName = 'S';
-    } else if(cms >= 38 && cms < 42) {  // Fixed condition
-        sizeName = 'M';
-    } else if(cms >= 42) {  // Fixed condition
-        sizeName = 'L';
-    }
-    return sizeName;
-}
 
 #include <stdio.h>
 #include <assert.h>
